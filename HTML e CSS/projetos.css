@@ -1,0 +1,114 @@
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #024c40;
+}
+
+/* Título principal */
+main > h1 {
+  text-align: center;
+  color: #035d7a;
+  font-size: 2em;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+main > h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #00b894;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cada projeto */
+section {
+  display: flex;
+  align-items: center; /* alinha texto e imagem verticalmente */
+  justify-content: space-between; /* espaçamento igual */
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Área de texto dentro da section */
+section .texto {
+  flex: 1; /* ocupa o espaço restante */
+}
+
+/* Imagem */
+section img {
+  width: 35%;
+  max-width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* Títulos e parágrafos */
+section h2 {
+  color: #00b894;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.1em;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+section ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+section ul li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* Efeito hover */
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Parágrafo final */
+main > p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 30px;
+  color: #035d7a;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  section p, section ul {
+    text-align: left;
+  }
+}

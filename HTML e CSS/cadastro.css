@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo geral */
+body {
+  background: linear-gradient(180deg, #e0f7fa, #e8f5e9);
+  color: #024c40;
+  padding: 0 20px;
+}
+
+/* Header estilizado */
+header {
+  background: linear-gradient(90deg, #a8e6cf, #56cfe1);
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navebar img {
+  border-radius: 10px;
+}
+
+.navebar h1 {
+  color: #024c40;
+  font-size: 1.8em;
+}
+
+.nave a {
+  text-decoration: none;
+  color: #024c40;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+}
+
+/* Efeito de botão */
+.nave a:hover {
+  background-color: #00b894;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.nave a:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+}
+
+/* Formulário */
+form {
+  background: #ffffff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+form h1 {
+  text-align: center;
+  color: #035d7a;
+  margin-bottom: 25px;
+}
+
+/* Campos e labels */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #024c40;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #a8e6cf;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+/* Foco nos campos */
+form input:focus {
+  outline: none;
+  border-color: #00b894;
+  box-shadow: 0 0 5px rgba(0, 184, 148, 0.4);
+}
+
+/* Botão estilizado */
+form button {
+  background-color: #00b894;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Efeito de clique no botão */
+form button:hover {
+  background-color: #00976f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+form button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .navebar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nave a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
