@@ -8,7 +8,7 @@
 /* Fundo geral */
 body {
   background: linear-gradient(180deg, #6bb18f, #93b6b3);
-  color: #024c40;
+  color: #000000;
   padding: 20px;
 }
 
@@ -32,13 +32,13 @@ header {
 }
 
 .navebar h1 {
-  color: #024c40;
+  color: #000000;
   font-size: 1.8em;
 }
 
 .nave a {
   text-decoration: none;
-  color: #024c40;
+  color: #000000;
   font-weight: 500;
   margin-left: 20px;
   padding: 10px 18px;
@@ -50,7 +50,7 @@ header {
 /* Efeito de botão */
 .nave a:hover {
   background-color: #00b894;
-  color: white;
+  color: rgb(0, 0, 0);
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
@@ -66,13 +66,13 @@ main {
   margin: 40px auto;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
-  color: #024c40;
+  color: #000000;
   line-height: 1.8;
 }
 
 /* Títulos */
 main h2 {
-  color: #035d7a;
+  color: #000000;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 15px;
@@ -123,7 +123,7 @@ main h2::after {
 
 /* Títulos de valores */
 main h3 {
-  color: #00b894;
+  color: #000000;
   margin-top: 25px;
   font-size: 1.3em;
 }
@@ -142,4 +142,66 @@ main h3 {
   .container p {
     text-align: center;
   }
+}
+
+/* === Interatividade extra === */
+
+/* Link ativo no menu */
+.nave a.ativo {
+  background-color: #00b894;
+  color: white;
+}
+
+/* Menu responsivo */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #024c40;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nave {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(90deg, #a8e6cf, #56cfe1);
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .nave.aberto {
+    display: flex;
+  }
+
+  .nave a {
+    margin: 10px 0;
+  }
+}
+
+/* Mensagem de sucesso do formulário */
+.mensagem-sucesso {
+  margin-top: 15px;
+  background-color: #a8e6cf;
+  color: #024c40;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Animação suave nos projetos */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+section.visivel {
+  opacity: 1;
+  transform: translateY(0);
 }

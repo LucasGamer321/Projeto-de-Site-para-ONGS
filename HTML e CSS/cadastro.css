@@ -38,7 +38,7 @@ header {
 
 .nave a {
   text-decoration: none;
-  color: #024c40;
+  color: #000000;
   font-weight: 500;
   margin-left: 20px;
   padding: 10px 18px;
@@ -80,7 +80,7 @@ form h1 {
 form label {
   display: block;
   margin-bottom: 6px;
-  font-weight: 500;
+  font-weight: bold;
   color: #024c40;
 }
 
