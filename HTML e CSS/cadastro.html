@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-        <nav class="navebar">
+        <nav class="navebar" aria-label="Navegação principal">
         <img src="imagens/arvoredo2.webp" alt="Logo Arvoredo do Bem" width="150">
         <h1>Arvoredo do Bem</h1>
         <div class="nave">
-        <a href="PaginaInicial.html">Pagina Inicial</a>
+        <a href="PaginaInicial.html">Página Inicial</a>
         <a href="cadastro.html">Cadastro</a> 
         <a href="Projetos.html">Projetos Sociais</a>
         </div>
@@ -24,31 +24,31 @@
     <form action="#" method="post">
         <h1>Cadastro de Usuário</h1>
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
 
-        <label for="CPF">CPF:</label>
-        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required><br><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"><br><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
 
         <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento"><br><br>
+        <input type="date" id="nascimento" name="nascimento">
 
         <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco"><br><br>
+        <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
 
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" placeholder="00000-000"><br><br>
+        <input type="text" id="cep" name="cep" placeholder="00000-000">
 
         <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado"><br><br>
+        <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
 
         <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade"><br><br>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
 
         <button type="submit">Enviar Cadastro</button>
     </form>

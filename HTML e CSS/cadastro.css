@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease;
 }
 
 /* Fundo geral */
@@ -72,8 +73,9 @@ form {
 
 form h1 {
   text-align: center;
-  color: #035d7a;
+  color: #024c40;
   margin-bottom: 25px;
+  font-size: 1.8em;
 }
 
 /* Campos e labels */
@@ -94,6 +96,12 @@ form input {
   transition: all 0.2s ease;
 }
 
+/* Placeholders úteis */
+form input::placeholder {
+  color: #888;
+  font-size: 0.9em;
+}
+
 /* Foco nos campos */
 form input:focus {
   outline: none;
@@ -112,6 +120,7 @@ form button {
   width: 100%;
   cursor: pointer;
   transition: all 0.25s ease;
+  font-size: 1.1em;
 }
 
 /* Efeito de clique no botão */
@@ -124,6 +133,18 @@ form button:hover {
 form button:active {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid #c3e6cb;
+  font-weight: 600;
 }
 
 /* Responsivo */
@@ -140,5 +161,9 @@ form button:active {
 
   form {
     padding: 20px;
+  }
+  
+  form h1 {
+    font-size: 1.5em;
   }
 }
